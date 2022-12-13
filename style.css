@@ -1,3 +1,233 @@
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgba(94, 94, 94, 0.242);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000000
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffa500;
+}
+
+.section {
+  width: 50%;
+}
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* styles for header */
+
+.header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.607);
+  margin-bottom: 20px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+.nav__link {
+  color: white;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__item::after {
+  content: '';
+  display: block;
+  background-color: #ffa500;
+  height: 1.5px;
+  transition: 0.3s;
+  width: 0%;
+}
+
+.nav__item:hover.nav__item::after {
+  width: 100%;
+}
+
+/* styles for section profile */
+
+.avatar-image__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 40px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile__title {
+  font-size: 48px;
+  color: #ffbc40f3;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.job {
+  font-size: 28px;
+}
+
+/* styles for contacts */
+
+
+.contacts-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list__link {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* styles for about */
+
+.summary__text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* styles for skills */
+
+.skill-list__item {
+  font-size: 20px;
+  padding-left: 20px;
+  background-image: url('./img/okey.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 15px;
+}
+
+/* styles for projects */
+
+.projects-list {
+  padding-left: 20px;
+}
+
+.projects-list__item {
+  list-style: square;
+}
+
+.projects-list__item:hover {
+  color: #ffa500;
+}
+
+.projects-list__link {
+  font-size: 24px;
+}
+
+/* styles for education */
+
+.education__text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* styles for english */
+
+.languages__text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+
+
+.pre {
+  font-size: 18px;
+}
+
+.code {
+  text-align: left;
+}
+
+.pre__code-text {
+  text-align: left;
+}
+
+
+
+
+
+/* styles for footer */
+
+.footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.607);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  font-size: 24px;
+  color: white;
 }
