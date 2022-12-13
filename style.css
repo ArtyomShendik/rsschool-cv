@@ -10,6 +10,7 @@ body {
   font-family: Roboto, sans-serif;
   background-color: rgba(94, 94, 94, 0.242);
   line-height: 1.5;
+  margin: 0;
 }
 
 a {
